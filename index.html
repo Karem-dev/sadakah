@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sadakah</title>
+  <title>صدقةٌ جاريةٌ</title>
   <meta name="description" content="القران الكريم كامل و تحميل القران الكريم باصوات الشيوخ عبدالرحمن مسعد اسلام صبحي ياسر الدوسري ">
   <link rel="shortcut icon" href="asset/Quran.png" type="image/x-icon">
   <style>
@@ -28,6 +28,8 @@
       align-items: center;
       justify-content: space-around;
       margin-top: 40px;
+      width: 90%;
+      margin: auto;
     }
 
     .head img {
@@ -73,10 +75,47 @@
       .sections{
         width: 80%;
       }
+      .head{
+            width: 80%;
+            margin: auto;
+          }
     }
 
     /* ____________________End of main content*/
-
+        /* للأجهزة الكبيرة (كمبيوتر) */
+        @media (min-width: 1024px) {
+          h1 {
+            font-size: 3.5rem !important;
+          }
+          #logo {
+            font-size: 1.6rem !important;
+          }
+        }
+      
+        /* للأجهزة المتوسطة (تابلت) */
+        @media (max-width: 1023px) {
+          h1 {
+            font-size: 3rem !important;
+          }
+          #logo {
+            font-size: 1.4rem !important;
+          }
+          .head{
+            width: 100%;
+            margin: 0;
+          }
+        }
+      
+        /* للأجهزة الصغيرة (موبايل) */
+        @media (max-width: 600px) {
+          h1 {
+            font-size: 2.5rem !important;
+          }
+          #logo {
+            font-size: 1.2rem !important;
+            max-width: 100% !important;
+          }
+        }
     
   </style>
 
@@ -91,7 +130,7 @@
     <img src="asset/icons8-menu.svg" alt="" id="menu_icon">
     <div id="menu">
       <ul id="menu_bar">
-        <li><a href="pages/AboutPage/About.html">من نحن</a></li>
+        <li><a href="pages/AboutPage/About.html">من المبرمج</a></li>
         <li><a href="pages/RadioPage/RadioPage.html">راديو القرأن</a></li>
         <li><a href="pages/QuranMp3Page/QuranMp3Page.html">الشيوخ</a></li>
         <li><a href="pages/QuranPage/QuranPage.html">قرأن</a></li>
@@ -105,22 +144,43 @@
   <main>
     <div class="head">
       <img src="asset/Quran.png" alt="">
-      <div style="text-align: center; padding: 20px;">
-        <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 10px;">صدقة جارية</h1>
-        <h1 id="logo" style="font-size: 1.5rem; font-weight: normal; max-width: 80%; margin: auto; line-height: 1.6;">
-          مرحبًا بك في موقعنا! هذا الموقع صدقة جارية على روح المرحومين بإذن الله 
-          <span style="display: block; font-weight: bold; margin-top: 10px; font-size: 1.8rem;">"المرحوم احمد الكناني" و "المرحوم احمد محمد"</span>
-          لا تنسوهم من صالح دعائكم.
-        </h1>
-      </div>
+      <div style="text-align: right; padding: 20px; display: flex; flex-direction: column; align-items: flex-start; justify-content: start; max-width: 90%; width: 70%; margin: auto;" dir="rtl">   
+        <h1 style="font-size: 3.5rem; font-weight: bold; margin-bottom: 15px; color: white;">صدقة جارية</h1>   
+        <h1 id="logo" style="font-size: 1.8rem; font-weight: normal; max-width: 80%; line-height: 1.8; color: #ffffff; margin: 0;">   
+            <span style="font-weight: bold; font-size: 2rem; color: #8e44ad; display: block; margin-bottom: 15px;">  
+                "كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ"  
+            </span>  
+            مرحبًا بك في موقعنا!  
+            <br>  
+            هذا الموقع صدقةٌ جاريةٌ على روح المرحومين بإذن الله:    
+            <span style="display: block;  margin-top: 15px; font-size: 2rem; font-weight: 900; color: #04abff; ">  
+                "المرحوم أحمد الكناني" و "المرحوم أحمد محمد الكناني"  
+            </span>   
+            <span style="display: block; margin-top: 10px; font-size: 1.6rem; color: white;">  
+                لا تنسوهم من صالح دعائكم، ونسأل الله أن يجعل هذا العمل في ميزان حسناتهم.  
+            </span>   
+        </h1>   
+    </div> 
+    
+   
+      
+      
       
     </div>
+
+
+
+
+
+
+
+    
     <div class="sectionsbx">
       <h1>الاقسام</h1>
       <a href="pages/QuranPage/QuranPage.html"class="sections"><h2>القرأن</h2></a>
       <a href="pages/QuranMp3Page/QuranMp3Page.html" class="sections"><h2>الشيوخ</h2></a>
       <a href="pages/RadioPage/RadioPage.html" class="sections"><h2>اذاعة القرأن</h2></a>
-      <a href="pages/AboutPage/About.html" class="sections"><h2>من نحن</h2></a>
+      <a href="pages/AboutPage/About.html" class="sections"><h2>من المبرمج</h2></a>
     </div>
   </main>
 
