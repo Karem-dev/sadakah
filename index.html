@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khair</title>
+  <style>
+
+    #circle {
+      position: fixed;
+      background-color: var(--blue);
+      width: 900px;
+      height: 900px;
+      clip-path: circle(80% at right 100%);
+      z-index: -1;
+      bottom: 0;
+      right: 0;
+      transition: .5s;
+    }
+
+    
+    /* ____________________main content*/
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+
+    .head img {
+      width: 600px;
+      -webkit-user-drag: none;
+      -moz-window-dragging: no-drag;
+    }
+
+    .sectionsbx {
+      width: 80%;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sections {
+      width: 50%;
+      height: 30px;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--lightyellow);
+      padding: 10px;
+      font-weight: 900;
+      box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+      cursor: pointer;
+      transition: .5s;
+      
+      text-decoration: none;
+      color: #0f172a;
+      color: #0f172a;
+    }
+    .sections:hover{
+      background-color: var(--blue);
+      color: white;
+    }
+
+    @media (max-width: 1200px) {
+      .sections{
+        width: 80%;
+      }
+    }
+
+    /* ____________________End of main content*/
+
+    
+  </style>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="circle"></div>
+
+  <nav>
+    <img src="asset/icons8-menu.svg" alt="" id="menu_icon">
+    <div id="menu">
+      <ul id="menu_bar">
+        <li><a href="pages/AboutPage/About.html">من نحن</a></li>
+        <li><a href="pages/RadioPage/RadioPage.html">راديو القرأن</a></li>
+        <li><a href="pages/QuranMp3Page/QuranMp3Page.html">الشيوخ</a></li>
+        <li><a href="pages/QuranPage/QuranPage.html">قرأن</a></li>
+        <li><a href="index.html">الرئيسية</a></li>
+      </ul>
+    </div>
+
+    <h1 id="logo">صدقة جارية</h1>
+  </nav>
+
+  <main>
+    <div class="head">
+      <img src="asset/Quran.png" alt="">
+      <div style="text-align: center; padding: 20px;">
+        <h1 style="font-size: 4rem; font-weight: bold; margin-bottom: 10px;">صدقة جارية</h1>
+        <h1 id="logo" style="font-size: 1.5rem; font-weight: normal; max-width: 80%; margin: auto; line-height: 1.6;">
+          مرحبًا بك في موقعنا! هذا الموقع صدقة جارية على روح المرحومين بإذن الله 
+          <span style="display: block; font-weight: bold; margin-top: 10px; font-size: 1.8rem;">"المرحوم احمد الكناني" و "المرحوم احمد محمد"</span>
+          لا تنسوهم من صالح دعائكم.
+        </h1>
+      </div>
+      
+    </div>
+    <div class="sectionsbx">
+      <h1>الاقسام</h1>
+      <a href="pages/QuranPage/QuranPage.html"class="sections"><h2>القرأن</h2></a>
+      <a href="pages/QuranMp3Page/QuranMp3Page.html" class="sections"><h2>الشيوخ</h2></a>
+      <a href="pages/RadioPage/RadioPage.html" class="sections"><h2>اذاعة القرأن</h2></a>
+      <a href="pages/AboutPage/About.html" class="sections"><h2>من نحن</h2></a>
+    </div>
+  </main>
+
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PCY7YBCEL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7PCY7YBCEL');
+</script>
+
+
+  
+
+<script src="main.js"></script>
+</body>
+
+</html>

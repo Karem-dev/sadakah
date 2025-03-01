@@ -1,0 +1,170 @@
+#circle2,
+#circle3 {
+  position: fixed;
+  background-color: var(--blue);
+  width: 900px;
+  height: 900px;
+  clip-path: circle(50% at left 100%);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+img{
+  -webkit-user-drag: none;
+}
+nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+}
+#menu_bar li a {
+  font-weight: 500;
+}
+#rectangle {
+  width: 70%;
+  margin: 100px auto;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+#Quranicon {
+  height: 200px;
+}
+#reciterS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.reciterbx {
+  position: relative;
+  /* background-color: #a0d3fe; */
+  background-color: var(--secdark);
+  height: 300px;
+  width: 200px;
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+.reciterbx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  /* height: 100%; */
+  transition: 1s;
+  background-color: whitesmoke;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+/* ____________-Hovers */
+.reciterbx:hover::before {
+  height: 100%;
+  scale: 0.9;
+}
+.reciterbx:hover .reciterContent {
+  color: var(--maindark);
+  scale: 0.8;
+}
+.reciterbx:hover #reciterName{
+  color: var(--maindark);
+}
+.reciterContent {
+  z-index: 1;
+  transition: 1s;
+}
+#reciterName {
+  font-weight: 900;
+  color: white;
+  transition: 1s;
+}
+#moshaf {
+  font-weight: 600;
+  font-size: 15px;
+}
+/* _____________________media */
+@media (max-width: 1200px) {
+  .reciterbx {
+    height: 220px;
+    width: 120px;
+    font-size: 10px;
+    margin: 15px;
+  }
+  #reciterName{
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+  .reciterbx img{
+    width: 70%;
+  }
+  #rectangle{
+    width: 100%;
+  }
+}
+
+/* _______________________________ */
+#addmorereciter{
+  position: relative;
+  background-color:var(--blue);
+  width: 200px;
+  margin: 15px auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* ____________________________________ player- */
+
+#playerpage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scale: 1;
+  opacity: 0;
+  display: none;
+  background-color: var(--maindark);
+  z-index: 9;
+  overflow-y: scroll;
+}
+.playerpageanimation {
+  animation: playerpageanimation 2s forwards;
+}
+.playerpageanimation2 {
+  animation: playerpageanimation 1s forwards reverse;
+}
+#playerpage main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@keyframes playerpageanimation {
+  0% {
+    /* opacity: 0; */
+    display: none;
+  }
+  100% {
+    opacity: 100;
+    display: flex;
+  }
+}
